@@ -390,8 +390,23 @@
                         </div>
                     )}
 
-                    <footer className="py-10 border-t border-white/5 bg-slate-950 px-4 text-center">
-                        <p className="text-[10px] text-slate-600 max-w-3xl mx-auto leading-relaxed">{t.legal.full}</p>
+                    <footer className="py-16 border-t border-white/5 bg-slate-950/50 px-6 text-center">
+                        <div className="flex flex-col items-center gap-6 mb-10">
+                            <div className="flex items-center space-x-2 opacity-50">
+                                <Plane className="text-cyan-400" size={20} />
+                                <span className="text-lg font-bold text-white brand-font uppercase tracking-tighter">Visas UCE</span>
+                            </div>
+                            <div className="flex gap-8 text-slate-500 text-[10px] font-bold uppercase tracking-[0.3em]">
+                                <span>USA</span>
+                                <span>Canada</span>
+                                <span>Europe</span>
+                            </div>
+                        </div>
+                        <p className="text-[10px] text-slate-700 max-w-3xl mx-auto leading-loose uppercase tracking-widest font-medium">
+                            {t.legal.full}
+                            <br/>
+                            © 2025 VISAS UCE. Todos los derechos reservados.
+                        </p>
                     </footer>
                 </div>
             );
